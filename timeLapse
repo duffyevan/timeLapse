@@ -1,0 +1,9 @@
+#!/bin/bash
+let NUM=0
+while (true);
+do
+	fswebcam -r 640x480 --jpeg 85 shot$NUM.jpg
+	echo "Shot number $NUM taken"
+	sleep 5s
+	let NUM=NUM+1
+done
